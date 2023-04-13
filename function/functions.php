@@ -3,7 +3,7 @@
 $conn = mysqli_connect("localhost", "root", "", "leleiot");
 date_default_timezone_set("Asia/Jakarta");
 
-function query($query)
+function queryWaktuMakan($query)
 {
     global $conn;
 
@@ -15,7 +15,43 @@ function query($query)
     return $rows;
 }
 
-function tambah($data)
+function queryDataKolam($query)
+{
+    global $conn;
+
+    $result = mysqli_query($conn, $query);
+    $rows = [];
+    while ($row = mysqli_fetch_assoc($result)) {
+        $rows[] = $row;
+    }
+    return $rows;
+}
+
+function tambahDataKolam($data)
+{
+    global $conn;
+
+    // ambil data dari tiap elemen dalam form
+    $jumlah = htmlspecialchars($data["jumlah"]);
+    $ukuran = htmlspecialchars($data["ukuran"]);
+    $berat = htmlspecialchars($data["berat"]);
+    $tanggalTebar = htmlspecialchars($data["tanggalTebar"]);
+    $tanggalMenguras = htmlspecialchars($data["tanggalMenguras"]);
+    $tanggalPindah = htmlspecialchars($data["tanggalPindah"]);
+    // $kecepatan = 50;
+    // $created = date('Y-m-d H:i:s');
+    // $modified = null;
+
+    // query insert data
+    $query = "INSERT INTO datakolam 
+                VALUES
+                ('', '$jumlah', '$ukuran', '$berat', '$tanggalTebar', '$tanggalMenguras', '$tanggalPindah')";
+    mysqli_query($conn, $query);
+
+    return mysqli_affected_rows($conn);
+}
+
+function tambahWaktuMakan($data)
 {
     global $conn;
 

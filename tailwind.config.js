@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./view/*.{html,js,php}",
-            "./src/*.{html,js,php}",
-            "./script/*.{html,js,php}",
-            "./api/*.{html,js,php}",
-            "./function/*.{html,js,php}"],
+            "./src/*.php",
+            "./script/*.js",
+            "./api/*.php",
+            "./function/*.php"],
   theme: {
     extend: {
       fontFamily: {
