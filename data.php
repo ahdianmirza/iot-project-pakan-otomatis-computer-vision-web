@@ -48,7 +48,7 @@ if (isset($_POST["submit"])) {
     <div class="container">
         <div class="flex relative">
             <section id="sidebar">
-                <div id="sidebar-hidden" class="hidden flex-col bg-primary w-[40vw] md:w-[17vw] h-[100vh] fixed z-50 rounded-tr-[32px] rounded-br-[32px]">
+                <div id="sidebar-hidden" class="hidden md:flex flex-col bg-primary w-[40vw] md:w-[17vw] h-[100vh] fixed z-50 rounded-tr-[32px] rounded-br-[32px]">
                     <div class="flex justify-end items-center mt-5 md:mt-0 mr-4">
                         <button id="arrow-left" name="arrow-left" type="button" class="text-white w-8 h-8 md:hidden">
                             <svg class="stroke-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -148,22 +148,13 @@ if (isset($_POST["submit"])) {
                 <section id="header">
                     <div class="flex relative">
                         <!-- Sort -->
-                        <div class="flex min-w-full overflow-hidden justify-between z-10 h-[68px] bg-white fixed">
+                        <div class="flex min-w-full overflow-hidden justify-between z-10 h-[68px] bg-white fixed shadow-lg">
                             <div id="header-active" class="flex justify-center items-center text-xs md:ml-[17vw] pl-4 md:pl-0">
-                                <button id="hamburger-menu" name="hamburger-menu" type="button" class="text-textColor mr-4">
+                                <button id="hamburger-menu" name="hamburger-menu" type="button" class="text-textColor mr-4 md:hidden">
                                     <svg width="24" height="24" class="stroke-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M3 7H21M3 12H21M3 17H21" stroke-width="1.5" stroke-linecap="round" />
                                     </svg>
                                 </button>
-                                <label for="sort" class="font-medium text-[16px] hidden md:block md:ml-12">Sort :
-                                </label>
-                                <form action="">
-                                    <select name="sort" id="sort" class="border border-[#CCCCCC] py-1 md:py-2 md:px-4 rounded-lg md:rounded-[12px] md:ml-2 md:text-sm">
-                                        <option value="Last Month">Last Month</option>
-                                        <option value="Last Week">Last Week</option>
-                                        <option value="Last 24 Hours">Last 24 Hours</option>
-                                    </select>
-                                </form>
                             </div>
 
                             <!-- Notif & Profil -->
@@ -192,7 +183,7 @@ if (isset($_POST["submit"])) {
                 <div id="sidebar-black-screen" class="hidden ml-[38vw] w-[62vw] bg-primary opacity-40 h-[100vh] fixed z-45">ui</div>
 
                 <!-- Content -->
-                <main class="md:ml-[17vw]">
+                <main class="md:ml-[15vw]">
                     <section id="settings">
                         <!-- Halaman -->
                         <div class="mt-[72px] pt-4 pb-2 pl-4 md:ml-16 mb-4 md:mb-7">
@@ -203,7 +194,7 @@ if (isset($_POST["submit"])) {
                             <!-- Layout Dashboard -->
                             <div id="dashboard-layout" class="flex flex-col">
                                 <!-- Kotak Tabel Data -->
-                                <div id="box-data" class="w-[95vw] md:w-[73vw] bg-white md:mr-0 md:ml-16 p-3 md:p-6 rounded-lg md:rounded-xl shadow-md md:shadow-lg">
+                                <div id="box-data" class="w-[95vw] md:w-[73vw] bg-white p-3 md:p-6 rounded-lg md:rounded-xl shadow-md md:shadow-lg">
                                     <div class="flex justify-between items-center">
                                         <h4 class="font-medium text-[14px] md:text-base text-[#cccccc]">Data Kolam 1</h4>
                                         <span class="w-5 h-5 md:w-6 md:h-6 text-[#cccccc]">

@@ -568,11 +568,6 @@ video {
   margin-right: 0.25rem;
 }
 
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -581,10 +576,6 @@ video {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
 }
 
 .mb-12 {
@@ -609,10 +600,6 @@ video {
 
 .ml-4 {
   margin-left: 1rem;
-}
-
-.ml-\[20vw\] {
-  margin-left: 20vw;
 }
 
 .ml-\[38vw\] {
@@ -731,10 +718,6 @@ video {
   width: 20px;
 }
 
-.w-\[20vw\] {
-  width: 20vw;
-}
-
 .w-\[30px\] {
   width: 30px;
 }
@@ -759,10 +742,6 @@ video {
   width: 62vw;
 }
 
-.w-\[73vw\] {
-  width: 73vw;
-}
-
 .w-\[95vw\] {
   width: 95vw;
 }
@@ -783,11 +762,6 @@ video {
 
 .min-w-full {
   min-width: 100%;
-}
-
-.min-w-max {
-  min-width: -moz-max-content;
-  min-width: max-content;
 }
 
 .max-w-fit {
@@ -862,11 +836,6 @@ video {
 
 .border-solid {
   border-style: solid;
-}
-
-.border-\[\#CCCCCC\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(204 204 204 / var(--tw-border-opacity));
 }
 
 .border-\[\#cccccc\] {
@@ -1008,10 +977,6 @@ video {
   font-size: 18px;
 }
 
-.text-\[20px\] {
-  font-size: 20px;
-}
-
 .text-\[24px\] {
   font-size: 24px;
 }
@@ -1113,32 +1078,20 @@ video {
     margin-bottom: 0px;
   }
 
-  .md\:mb-0 {
-    margin-bottom: 0px;
-  }
-
   .md\:mb-7 {
     margin-bottom: 1.75rem;
-  }
-
-  .md\:ml-12 {
-    margin-left: 3rem;
   }
 
   .md\:ml-16 {
     margin-left: 4rem;
   }
 
-  .md\:ml-2 {
-    margin-left: 0.5rem;
-  }
-
-  .md\:ml-4 {
-    margin-left: 1rem;
-  }
-
   .md\:ml-6 {
     margin-left: 1.5rem;
+  }
+
+  .md\:ml-\[15vw\] {
+    margin-left: 15vw;
   }
 
   .md\:ml-\[17vw\] {
@@ -1157,10 +1110,6 @@ video {
     margin-right: 0.75rem;
   }
 
-  .md\:mr-4 {
-    margin-right: 1rem;
-  }
-
   .md\:mt-0 {
     margin-top: 0px;
   }
@@ -1171,6 +1120,14 @@ video {
 
   .md\:mt-6 {
     margin-top: 1.5rem;
+  }
+
+  .md\:ml-\[20vw\] {
+    margin-left: 20vw;
+  }
+
+  .md\:ml-0 {
+    margin-left: 0px;
   }
 
   .md\:block {
@@ -1249,26 +1206,12 @@ video {
     row-gap: 1.5rem;
   }
 
-  .md\:rounded-\[12px\] {
-    border-radius: 12px;
-  }
-
   .md\:rounded-xl {
     border-radius: 0.75rem;
   }
 
   .md\:p-6 {
     padding: 1.5rem;
-  }
-
-  .md\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .md\:py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
   }
 
   .md\:pl-0 {
@@ -1294,11 +1237,6 @@ video {
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   .md\:shadow-lg {

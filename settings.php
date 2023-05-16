@@ -71,7 +71,7 @@ if (isset($_POST["submitWaktu"])) {
     <div class="container">
         <div class="flex relative">
             <section id="sidebar">
-                <div id="sidebar-hidden" class="hidden flex-col bg-primary w-[40vw] md:w-[17vw] h-[100vh] fixed z-50 rounded-tr-[32px] rounded-br-[32px]">
+                <div id="sidebar-hidden" class="hidden md:flex flex-col bg-primary w-[40vw] md:w-[17vw] h-[100vh] fixed z-50 rounded-tr-[32px] rounded-br-[32px]">
                     <div class="flex justify-end items-center mt-5 md:mt-0 mr-4">
                         <button id="arrow-left" name="arrow-left" type="button" class="text-white w-8 h-8 md:hidden">
                             <svg class="stroke-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -174,9 +174,9 @@ if (isset($_POST["submitWaktu"])) {
                 <section id="header">
                     <div class="flex relative">
                         <!-- Sort -->
-                        <div class="flex min-w-full overflow-hidden justify-between z-10 h-[68px] bg-white fixed">
+                        <div class="flex min-w-full overflow-hidden justify-between z-10 h-[68px] bg-white fixed shadow-lg">
                             <div id="header-active" class="flex justify-center items-center text-xs md:ml-[17vw] pl-4 md:pl-0">
-                                <button id="hamburger-menu" name="hamburger-menu" type="button" class="text-textColor mr-4">
+                                <button id="hamburger-menu" name="hamburger-menu" type="button" class="text-textColor mr-4 md:hidden">
                                     <svg width="24" height="24" class="stroke-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M3 7H21M3 12H21M3 17H21" stroke-width="1.5" stroke-linecap="round" />
                                     </svg>
@@ -206,7 +206,7 @@ if (isset($_POST["submitWaktu"])) {
                 </section>
 
                 <!-- Content -->
-                <main class="md:ml-[17vw]">
+                <main class="md:ml-[15vw]">
                     <section id="settings">
                         <!-- Halaman -->
                         <div class="mt-[72px] pt-4 pl-4 md:pl-0 pb-2 md:ml-16 mb-4 md:mb-7">
@@ -217,7 +217,7 @@ if (isset($_POST["submitWaktu"])) {
                         <div id="dashboard-layout" class="flex flex-col">
                             <div class="flex flex-col justify-center items-center">
                                 <!-- Kotak Setting Data Kolam Ikan -->
-                                <div id="box-kolam" class="w-[95vw] md:w-[73vw] bg-white mb-4 md:mr-0 md:ml-16 p-3 md:p-6 rounded-lg md:rounded-xl shadow-md md:shadow-lg">
+                                <div id="box-kolam" class="w-[95vw] md:w-[73vw] bg-white mb-4 p-3 md:p-6 rounded-lg md:rounded-xl shadow-md md:shadow-lg">
                                     <div class="flex justify-between items-center">
                                         <h4 class="font-medium text-[14px] md:text-base text-[#cccccc]">Data Ikan</h4>
                                         <span class="w-5 h-5 md:w-6 md:h-6 text-[#cccccc]">
@@ -339,7 +339,7 @@ if (isset($_POST["submitWaktu"])) {
                                 </div>
 
                                 <!-- Kotak Setting Waktu Pakan -->
-                                <div id="box-kolam" class="w-[95vw] md:w-[73vw] bg-white md:mr-0 md:ml-16 p-3 md:p-6 rounded-lg md:rounded-xl shadow-md md:shadow-lg">
+                                <div id="box-kolam" class="w-[95vw] md:w-[73vw] bg-white p-3 md:p-6 rounded-lg md:rounded-xl shadow-md md:shadow-lg">
                                     <div class="flex justify-between items-center">
                                         <h4 class="font-medium text-[14px] md:text-base text-[#cccccc]">Waktu Pakan</h4>
                                         <span class="w-5 h-5 md:w-6 md:h-6 text-[#cccccc]">
@@ -403,7 +403,7 @@ if (isset($_POST["submitWaktu"])) {
                                 </div>
 
                                 <!-- Kotak Tabel Data Kolam -->
-                                <div id="box-tabel-data" class="w-[95vw] md:w-[73vw] mt-4 bg-white md:mr-0 md:ml-16 p-4 md:p-6 rounded-lg md:rounded-xl shadow-md md:shadow-lg">
+                                <div id="box-tabel-data" class="w-[95vw] md:w-[73vw] mt-4 bg-white p-4 md:p-6 rounded-lg md:rounded-xl shadow-md md:shadow-lg">
                                     <div class="flex justify-between items-center">
                                         <h4 class="font-medium text-[14px] md:text-base text-[#cccccc]">Tabel Data Kolam
                                         </h4>
@@ -445,7 +445,7 @@ if (isset($_POST["submitWaktu"])) {
                                 </div>
 
                                 <!-- Kotak Tabel Waktu Pakan -->
-                                <div id="box-tabel-data" class="w-[95vw] md:w-[73vw] mt-4 bg-white md:mr-0 md:ml-16 p-4 md:p-6 rounded-lg md:rounded-xl shadow-md md:shadow-lg">
+                                <div id="box-tabel-data" class="w-[95vw] md:w-[73vw] mt-4 bg-white p-4 md:p-6 rounded-lg md:rounded-xl shadow-md md:shadow-lg">
                                     <div class="flex justify-between items-center">
                                         <h4 class="font-medium text-[14px] md:text-base text-[#cccccc]">Tabel Waktu Pakan
                                         </h4>

@@ -20,7 +20,7 @@
     <div class="container">
         <div class="flex relative">
             <section id="sidebar">
-                <div id="sidebar-hidden" class="hidden flex-col bg-primary w-[40vw] md:w-[17vw] h-[100vh] fixed z-50 rounded-tr-[32px] rounded-br-[32px]">
+                <div id="sidebar-hidden" class="hidden md:flex flex-col bg-primary w-[40vw] md:w-[17vw] h-[100vh] fixed z-50 rounded-tr-[32px] rounded-br-[32px]">
                     <div class="flex justify-end items-center mt-5 md:mt-0 mr-4">
                         <button id="arrow-left" name="arrow-left" type="button" class="text-white w-8 h-8 md:hidden">
                             <svg class="stroke-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -156,7 +156,7 @@
                 </section>
 
                 <!-- Content -->
-                <main class="md:pl-0 md:ml-[17vw] flex flex-col justify-center items-center">
+                <main class="md:pl-0 md:ml-[15vw] flex flex-col justify-center items-center">
                     <section id="dashboard">
                         <!-- Halaman -->
                         <div class="mt-[72px] pt-4 pb-2 md:ml-16 mb-4 md:mb-7">
