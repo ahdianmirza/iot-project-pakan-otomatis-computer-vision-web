@@ -137,7 +137,7 @@ function tambahWaktuMakan($data)
     }
 
     // query insert data
-    $query = "INSERT INTO waktukasihmakan 
+    $query = "INSERT INTO waktumakan 
                 VALUES
                 ('', '$jam', '$menit', '$detik', '$lamaPakan', '$kecepatan', '$created', '$modified')";
     mysqli_query($conn, $query);
@@ -148,7 +148,7 @@ function tambahWaktuMakan($data)
 function hapus($id)
 {
     global $conn;
-    mysqli_query($conn, "DELETE FROM waktukasihmakan WHERE id = $id");
+    mysqli_query($conn, "DELETE FROM waktumakan WHERE id = $id");
 
     return mysqli_affected_rows($conn);
 }
