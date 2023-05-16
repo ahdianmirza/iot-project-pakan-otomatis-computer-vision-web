@@ -14,14 +14,14 @@ if (isset($_POST["submitData"])) {
         echo "
             <script>
                 alert('Data kolam berhasil ditambahkan');
-                document.location.href = '../view/settings.php';
+                document.location.href = './settings.php';
             </script>
         ";
     } else {
         echo "
             <script>
                 alert('Data kolam gagal ditambahkan');
-                document.location.href = '../view/settings.php';
+                document.location.href = './settings.php';
             </script>
         ";
     }
@@ -35,14 +35,14 @@ if (isset($_POST["submitWaktu"])) {
         echo "
             <script>
                 alert('Waktu pakan berhasil ditambahkan');
-                document.location.href = '../view/settings.php';
+                document.location.href = './settings.php';
             </script>
         ";
     } else {
         echo "
             <script>
                 alert('Waktu pakan gagal ditambahkan');
-                document.location.href = '../view/settings.php';
+                document.location.href = './settings.php';
             </script>
         ";
     }

@@ -12,14 +12,14 @@ if (isset($_POST["submit"])) {
         echo "
             <script>
                 alert('Data berhasil ditambahkan');
-                document.location.href = '../view/settings.php';
+                document.location.href = './settings.php';
             </script>
         ";
     } else {
         echo "
             <script>
                 alert('Data gagal ditambahkan');
-                document.location.href = '../view/settings.php';
+                document.location.href = './settings.php';
             </script>
         ";
     }

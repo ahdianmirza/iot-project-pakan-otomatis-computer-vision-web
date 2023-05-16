@@ -69,7 +69,7 @@ function tambahWaktuMakan($data)
         echo "
             <script>
                 alert('Format data salah!' + typeof($jam));
-                document.location.href = '../view/settings.php';
+                document.location.href = './settings.php';
             </script>
         ";
         die;
@@ -79,7 +79,7 @@ function tambahWaktuMakan($data)
         echo "
             <script>
                 alert('Format data salah!');
-                document.location.href = '../view/settings.php';
+                document.location.href = './settings.php';
             </script>
         ";
         die;
@@ -89,7 +89,7 @@ function tambahWaktuMakan($data)
         echo "
             <script>
                 alert('Format data salah!');
-                document.location.href = '../view/settings.php';
+                document.location.href = './settings.php';
             </script>
         ";
         die;
@@ -100,7 +100,7 @@ function tambahWaktuMakan($data)
         echo "
             <script>
                 alert('Format data salah!');
-                document.location.href = '../view/settings.php';
+                document.location.href = './settings.php';
             </script>
         ";
         die;
@@ -110,7 +110,7 @@ function tambahWaktuMakan($data)
         echo "
             <script>
                 alert('Format data salah!');
-                document.location.href = '../view/settings.php';
+                document.location.href = './settings.php';
             </script>
         ";
         die;
@@ -120,7 +120,7 @@ function tambahWaktuMakan($data)
         echo "
             <script>
                 alert('Format data salah!');
-                document.location.href = '../view/settings.php';
+                document.location.href = './settings.php';
             </script>
         ";
         die;
@@ -130,7 +130,7 @@ function tambahWaktuMakan($data)
         echo "
             <script>
                 alert('Format data salah!');
-                document.location.href = '../view/settings.php';
+                document.location.href = './settings.php';
             </script>
         ";
         die;
