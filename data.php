@@ -1,7 +1,7 @@
 <?php
 require 'function/functions.php';
 
-$waktuPakan = queryWaktuMakan("SELECT * FROM waktukasihmakan");
+$waktuPakan = queryWaktuMakan("SELECT * FROM waktumakan");
 json_encode($waktuPakan);
 
 // Cek apakah tombol submit sudah ditekan

@@ -2,7 +2,7 @@
 require 'function/functions.php';
 
 // Query Database
-$waktuPakan = queryWaktuMakan("SELECT * FROM waktukasihmakan");
+$waktuPakan = queryWaktuMakan("SELECT * FROM waktumakan");
 $dataKolam = queryDataKolam("SELECT * FROM datakolam");
 json_encode($waktuPakan);
 
