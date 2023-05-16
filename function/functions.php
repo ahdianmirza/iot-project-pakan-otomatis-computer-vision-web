@@ -139,7 +139,7 @@ function tambahWaktuMakan($data)
     // query insert data
     $query = "INSERT INTO waktumakan 
                 VALUES
-                (null, '$jam', '$menit', '$detik', '$lamaPakan', '$kecepatan', '$created', '$modified')";
+                ('', '$jam', '$menit', '$detik', '$lamaPakan', '$kecepatan', '$created', '$modified')";
     mysqli_query($conn, $query);
 
     return mysqli_affected_rows($conn);
