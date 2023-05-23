@@ -165,7 +165,7 @@
             <div class="flex flex-wrap">
                 <div class="w-full self-center">
                     <!-- Judul Section -->
-                    <div class="mt-[72px] pt-4 pb-2 ml-2 md:ml-[19vw] mb-4 md:mb-7">
+                    <div class="mt-[72px] pt-4 pb-2 ml-2 lg:ml-[19vw] mb-4 md:mb-7">
                         <h1 class="font-extrabold text-textColor text-[24px] md:text-[32px]">Dashboard</h1>
                     </div>
 

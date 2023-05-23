@@ -1281,6 +1281,10 @@ video {
     margin-left: 15vw;
   }
 
+  .lg\:ml-\[19vw\] {
+    margin-left: 19vw;
+  }
+
   .lg\:flex {
     display: flex;
   }
