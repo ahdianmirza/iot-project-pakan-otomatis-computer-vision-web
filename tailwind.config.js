@@ -6,6 +6,9 @@ module.exports = {
             "./api/*.php",
             "./function/*.php"],
   theme: {
+    container: {
+      center: true
+    },
     extend: {
       fontFamily: {
         poppins: ["Poppins"],
@@ -17,7 +20,7 @@ module.exports = {
         textColor: "#353535",
       },
       screens: {
-        '2xl': '1366px',
+        '2xl': '1320px'
       }
     },
   },

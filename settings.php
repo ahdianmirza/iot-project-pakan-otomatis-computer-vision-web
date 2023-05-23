@@ -64,12 +64,13 @@ if (isset($_POST["submitWaktu"])) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <title>Settings - Lele Jaya</title>
+    <title>Settings - AFEESH</title>
 </head>
 
 <body class="bg-bgColor">
     <div class="container">
         <div class="flex relative">
+            <!-- Sidebar Section Start -->
             <section id="sidebar">
                 <div id="sidebar-hidden" class="hidden md:flex flex-col bg-primary w-[40vw] md:w-[17vw] h-[100vh] fixed z-50 rounded-tr-[32px] rounded-br-[32px]">
                     <div class="flex justify-end items-center mt-5 md:mt-0 mr-4">
@@ -82,7 +83,7 @@ if (isset($_POST["submitWaktu"])) {
                     </div>
                     <a href="index.html" class="flex justify-center items-center mb-12 mt-8">
                         <img src="img/fish.png" alt="Logo Ikan" class="w-[30px] h-[30px]">
-                        <h3 class="ml-4 font-bold text-white text-[18px] md:text-[20px]">Lele Jaya</h3>
+                        <h3 class="ml-4 font-bold text-white text-[18px] md:text-[20px]">AFEESH</h3>
                     </a>
 
                     <!-- Menu -->
@@ -166,6 +167,7 @@ if (isset($_POST["submitWaktu"])) {
                         </div>
                     </div>
             </section>
+            <!-- Sidebar Section End -->
 
             <!-- Sidebar Black Screen -->
             <div id="sidebar-black-screen" class="hidden ml-[38vw] w-[62vw] bg-primary opacity-40 h-[100vh] fixed z-45">ui</div>

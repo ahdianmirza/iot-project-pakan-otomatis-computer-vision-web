@@ -41,7 +41,7 @@ if (isset($_POST["submit"])) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <title>Settings - Lele Jaya</title>
+    <title>Settings - AFEESH</title>
 </head>
 
 <body class="bg-bgColor">
@@ -59,7 +59,7 @@ if (isset($_POST["submit"])) {
                     </div>
                     <a href="index.html" class="flex justify-center items-center mb-12 mt-8">
                         <img src="img/fish.png" alt="Logo Ikan" class="w-[30px] h-[30px]">
-                        <h3 class="ml-4 font-bold text-white text-[18px] md:text-[20px]">Lele Jaya</h3>
+                        <h3 class="ml-4 font-bold text-white text-[18px] md:text-[20px]">AFEESH</h3>
                     </a>
 
                     <!-- Menu -->
