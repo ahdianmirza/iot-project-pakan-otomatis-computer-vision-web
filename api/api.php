@@ -1,6 +1,6 @@
 <?php
 // Koneksi ke database
-$conn = mysqli_connect("localhost", "root", "", "leleiot");
+$conn = mysqli_connect("localhost", "root", "", "afeesh_db");
 
 function query($query)
 {
@@ -13,6 +13,6 @@ function query($query)
     return $rows;
 }
 
-$waktuPakan = query("SELECT * FROM waktukasihmakan");
+$waktuPakan = query("SELECT * FROM waktumakan");
 
 echo json_encode($waktuPakan);

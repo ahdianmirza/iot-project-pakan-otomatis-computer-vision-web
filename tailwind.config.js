@@ -20,7 +20,7 @@ module.exports = {
         textColor: "#353535",
       },
       screens: {
-        '2xl': '1320px'
+        '2xl': '1440px'
       }
     },
   },
