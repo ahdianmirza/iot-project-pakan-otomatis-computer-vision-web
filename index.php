@@ -376,7 +376,7 @@ json_encode($stokMakanan);
                                     <div class="mt-2">
                                         <?php if (mysqli_num_rows(mysqli_query($conn, "SELECT * FROM datakolam")) > 0) : ?>
                                             <?php if ($dataKolamLast["beratPakan"] == null) : ?>
-                                                <h3 class="font-bold text-[16px] md:text-[24px] text-textColor">- gram</h3>
+                                                <h3 class="font-bold text-[16px] md:text-[24px] text-textColor">- %</h3>
                                             <?php else : ?>
                                                 <h3 class="font-bold text-[16px] md:text-[24px] text-textColor"><?= $dataKolamLast["beratPakan"] / 1000 ?> gram</h3>
                                             <?php endif; ?>

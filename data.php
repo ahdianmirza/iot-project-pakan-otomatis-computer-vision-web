@@ -238,6 +238,12 @@ if (isset($_POST["submit"])) {
                                                         Berat
                                                     </th>
                                                     <th class="px-1 py-2 border-b-2 border-[#CCCCCC] text-slate-700">
+                                                        Suhu
+                                                    </th>
+                                                    <th class="px-1 py-2 border-b-2 border-[#CCCCCC] text-slate-700">
+                                                        Ph
+                                                    </th>
+                                                    <th class="px-1 py-2 border-b-2 border-[#CCCCCC] text-slate-700">
                                                         Tanggal
                                                         Tebar</th>
                                                     <th class="px-1 py-2 border-b-2 border-[#CCCCCC] text-slate-700">
@@ -259,6 +265,10 @@ if (isset($_POST["submit"])) {
                                                                 <?= $data["ukuran"] . " cm"; ?></td>
                                                             <td class="py-2 full-w text-center">
                                                                 <?= $data["beratIkan"] . " gram"; ?></td>
+                                                            <td class="py-2 full-w text-center">
+                                                                <?= $data["suhu"] . "°C"; ?></td>
+                                                            <td class="py-2 full-w text-center">
+                                                                <?= $data["ph"] . " pH"; ?></td>
 
                                                             <!-- Tampilan tanggalTebar Start -->
                                                             <?php
