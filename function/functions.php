@@ -39,16 +39,30 @@ function tambahDataKolam($data)
     // Ambil data
     $jumlah = htmlspecialchars($data["jumlah"]);
     $ukuran = htmlspecialchars($data["ukuran"]);
-    $berat = htmlspecialchars($data["berat"]);
+    $beratIkan = htmlspecialchars($data["beratIkan"]);
     $tanggalTebar = htmlspecialchars($data["tanggalTebar"]);
     $tanggalMenguras = htmlspecialchars($data["tanggalMenguras"]);
     $tanggalPindah = htmlspecialchars($data["tanggalPindah"]);
     $created = date('Y-m-d H:i:s');
 
+    // ambil data database
+    $queryAmbil = "SELECT * FROM datakolam ORDER BY id DESC LIMIT 1";
+    $queryAmbilSend = mysqli_query($conn, $queryAmbil);
+
+    while ($data = mysqli_fetch_array($queryAmbilSend)) {
+        $item[] = [
+            'suhu' => $data["suhu"],
+            'ph' => $data["ph"]
+        ];
+    }
+
+    $suhu = $item[0]["suhu"];
+    $ph = $item[0]["ph"];
+
     // query insert data
-    $query = "INSERT INTO datakolam (jumlah, ukuran, beratIkan, tanggalTebar, tanggalMenguras, tanggalPindah, created)
+    $query = "INSERT INTO datakolam (jumlah, ukuran, beratIkan, suhu, ph, tanggalTebar, tanggalMenguras, tanggalPindah, created)
                 VALUES
-                ('$jumlah', '$ukuran', '$berat', '$tanggalTebar', '$tanggalMenguras', '$tanggalPindah', '$created')";
+                ('$jumlah', '$ukuran', '$beratIkan', '$suhu', '$ph', '$tanggalTebar', '$tanggalMenguras', '$tanggalPindah', '$created')";
     mysqli_query($conn, $query);
 
     return mysqli_affected_rows($conn);

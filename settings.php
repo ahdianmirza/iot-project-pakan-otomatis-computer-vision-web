@@ -300,7 +300,7 @@ if (isset($_POST["submitWaktu"])) {
                                                                             <img src="img/bobot.png" alt="Berat">
                                                                         </span>
                                                                     </div>
-                                                                    <input type="number" id="berat" name="berat" placeholder="Berat ikan (gram)" class="px-3 py-2 shadow border border-[#cccccc] rounded-full w-full block text-sm ml-2" required>
+                                                                    <input type="number" id="beratIkan" name="beratIkan" placeholder="Berat ikan (gram)" class="px-3 py-2 shadow border border-[#cccccc] rounded-full w-full block text-sm ml-2" required>
                                                                 </div>
                                                             </label>
                                                         </li>

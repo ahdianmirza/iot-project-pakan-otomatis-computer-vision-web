@@ -224,7 +224,7 @@ if (isset($_POST["submit"])) {
                                     </div>
 
                                     <!-- Tabel Data Kolam -->
-                                    <div class="flex justify-center mt-4 overflow-auto rounded-lg shadow">
+                                    <div class="flex justify-center mt-4 overflow-x-scroll rounded-lg shadow">
                                         <table id="tabel" class="border border-solid text-xs w-full md:text-[14px] md:w-full">
                                             <thead class="bg-[#F9FBFC]">
                                                 <tr>
@@ -235,7 +235,10 @@ if (isset($_POST["submit"])) {
                                                         Ukuran
                                                     </th>
                                                     <th class="px-1 py-2 border-b-2 border-[#CCCCCC] text-slate-700">
-                                                        Berat
+                                                        Berat Ikan
+                                                    </th>
+                                                    <th class="px-1 py-2 border-b-2 border-[#CCCCCC] text-slate-700">
+                                                        Berat Pakan
                                                     </th>
                                                     <th class="px-1 py-2 border-b-2 border-[#CCCCCC] text-slate-700">
                                                         Suhu
@@ -265,10 +268,36 @@ if (isset($_POST["submit"])) {
                                                                 <?= $data["ukuran"] . " cm"; ?></td>
                                                             <td class="py-2 full-w text-center">
                                                                 <?= $data["beratIkan"] . " gram"; ?></td>
-                                                            <td class="py-2 full-w text-center">
-                                                                <?= $data["suhu"] . "°C"; ?></td>
-                                                            <td class="py-2 full-w text-center">
-                                                                <?= $data["ph"] . " pH"; ?></td>
+
+                                                            <!-- Tampilan beratPakan Start -->
+                                                            <?php if ($data["beratPakan"] === null) : ?>
+                                                                <td class="py-2 full-w text-center">
+                                                                    <?= "- gram"; ?></td>
+                                                            <?php else : ?>
+                                                                <td class="py-2 full-w text-center">
+                                                                    <?= $data["beratPakan"] . " gram"; ?></td>
+                                                            <?php endif; ?>
+                                                            <!-- Tampilan beratPakan End -->
+
+                                                            <!-- Tampilan suhu Start -->
+                                                            <?php if ($data["suhu"] === null) : ?>
+                                                                <td class="py-2 full-w text-center">
+                                                                    <?= "-°C"; ?></td>
+                                                            <?php else : ?>
+                                                                <td class="py-2 full-w text-center">
+                                                                    <?= $data["suhu"] . "°C"; ?></td>
+                                                            <?php endif; ?>
+                                                            <!-- Tampilan suhu End -->
+
+                                                            <!-- Tampilan ph Start -->
+                                                            <?php if ($data["ph"] === null) : ?>
+                                                                <td class="py-2 full-w text-center">
+                                                                    <?= "- pH"; ?></td>
+                                                            <?php else : ?>
+                                                                <td class="py-2 full-w text-center">
+                                                                    <?= $data["ph"] . " pH"; ?></td>
+                                                            <?php endif; ?>
+                                                            <!-- Tampilan ph End -->
 
                                                             <!-- Tampilan tanggalTebar Start -->
                                                             <?php
