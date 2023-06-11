@@ -88,7 +88,7 @@ if (isset($_POST["submit"])) {
                                         Dashboard</h3>
                                 </a>
                             </li>
-                            <li class="flex flex-col py-[25px] group">
+                            <!-- <li class="flex flex-col py-[25px] group">
                                 <a href="" class="flex items-center">
                                     <div class="w-[20px] h-[20px] md:w-[24px] md:h-[24px] 2xl:w-[26px] 2xl:h-[26px] text-lightGray group-hover:text-white mr-4">
                                         <svg class="stroke-current w-current h-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -100,7 +100,7 @@ if (isset($_POST["submit"])) {
                                     <h3 class="text-lightGray group-hover:text-white text-[14px] 2xl:text-base">
                                         Graphics</h3>
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="flex flex-col py-[25px]">
                                 <a href="data.php" class="flex items-center text-white">
                                     <div class="w-[20px] h-[20px] md:w-[24px] md:h-[24px] 2xl:w-[26px] 2xl:h-[26px] mr-4">

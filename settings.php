@@ -111,7 +111,7 @@ if (isset($_POST["submitWaktu"])) {
                                         Dashboard</h3>
                                 </a>
                             </li>
-                            <li class="flex flex-col py-[25px] group">
+                            <!-- <li class="flex flex-col py-[25px] group">
                                 <a href="" class="flex flex-row items-center">
                                     <div class="w-[20px] h-[20px] md:w-[24px] md:h-[24px] 2xl:w-[26px] 2xl:h-[26px] text-lightGray group-hover:text-white mr-4">
                                         <svg class="stroke-current w-current h-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -123,7 +123,7 @@ if (isset($_POST["submitWaktu"])) {
                                     <h3 class="font-medium text-lightGray group-hover:text-white text-[14px] 2xl:text-base">
                                         Graphics</h3>
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="flex flex-col py-[25px] group">
                                 <a href="data.php" class="flex flex-row items-center">
                                     <div class="w-[20px] h-[20px] md:w-[24px] md:h-[24px] 2xl:w-[26px] 2xl:h-[26px] text-lightGray group-hover:text-white mr-4">
@@ -412,7 +412,7 @@ if (isset($_POST["submitWaktu"])) {
                                                                             <img src="img/bobot.png" alt="Bobot">
                                                                         </span>
                                                                     </div>
-                                                                    <input type="number" id="bobot" name="bobotPakan" placeholder="Masukkan bobot" class="px-3 py-2 shadow border border-[#cccccc] rounded-full w-full block text-sm ml-2" required>
+                                                                    <input type="number" id="bobot" name="bobotPakan" placeholder="Masukkan bobot (gram)" class="px-3 py-2 shadow border border-[#cccccc] rounded-full w-full block text-sm ml-2" required>
                                                                 </div>
                                                             </label>
                                                         </li>
@@ -472,7 +472,7 @@ if (isset($_POST["submitWaktu"])) {
                                                                 </td>
                                                             <?php endif; ?>
                                                             <td class="p-1 full-w text-center">
-                                                                <?= $data["bobotPakan"] / 1000 . " gram"; ?></td>
+                                                                <?= $data["bobotPakan"] . " gram"; ?></td>
                                                             <td class="p-1 full-w">
                                                                 <div class="flex flex-col md:flex-row md:justify-center items-center">
                                                                     <div class="flex justify-center items-center py-1">

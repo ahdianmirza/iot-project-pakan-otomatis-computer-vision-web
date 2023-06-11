@@ -70,7 +70,7 @@ json_encode($stokMakanan);
                                     <h3 class="font-medium text-white text-[14px] 2xl:text-base">Dashboard</h3>
                                 </a>
                             </li>
-                            <li class="flex flex-col py-[25px] group">
+                            <!-- <li class="flex flex-col py-[25px] group">
                                 <a href="" class="flex flex-row items-center">
                                     <div class="w-[20px] h-[20px] md:w-[24px] md:h-[24px] 2xl:w-[26px] 2xl:h-[26px] text-lightGray group-hover:text-white mr-4">
                                         <svg class="stroke-current w-current h-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +82,7 @@ json_encode($stokMakanan);
                                     <h3 class="font-medium text-lightGray group-hover:text-white text-[14px] 2xl:text-base">
                                         Graphics</h3>
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="flex flex-col py-[25px] group">
                                 <a href="data.php" class="flex flex-row items-center">
                                     <div class="w-[20px] h-[20px] md:w-[24px] md:h-[24px] 2xl:w-[26px] 2xl:h-[26px] text-lightGray group-hover:text-white mr-4">
@@ -454,11 +454,18 @@ json_encode($stokMakanan);
                                         </span>
                                     </div>
 
-                                    <div class="mt-2">
-                                        <p class="font-bold text-[16px] md:text-[24px] text-center text-textColor">Ikan
-                                            kurang
-                                            tercukupi
-                                            makanannya. Tambahin dong makannya !</p>
+                                    <div class="mt-4">
+                                        <?php if (mysqli_num_rows(mysqli_query($conn, "SELECT * FROM datakolam")) > 0) : ?>
+                                            <?php if ($dataKolamLast["ph"] <= 6 && $dataKolamLast["ph"] >= 8) : ?>
+                                                <p class="font-bold text-[16px] md:text-[24px] text-center text-textColor">
+                                                    Kualitas air buruk. Waktunya menguras kolam !
+                                                </p>
+                                            <?php else : ?>
+                                                <p class="font-bold text-[16px] md:text-[24px] text-center text-textColor">
+                                                    Kualitas air bagus.
+                                                </p>
+                                            <?php endif; ?>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                             </div>
